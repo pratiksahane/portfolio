@@ -14,8 +14,8 @@ const Certifications=()=>{
     return(<>
     <div className="certifications" id="certificate">
         <h1>Certifications</h1>
-        <button onClick={()=>display("educationalPage")}>Eduacational</button><br/><br/>
-        <button onClick={()=>display("eventsPage")}>Events</button><br/><br/>
+        <button onClick={()=>display("educationalPage")}>Eduacational</button><br/>
+        <button onClick={()=>display("eventsPage")}>Events</button><br/>
         <button onClick={()=>display("ccPage")}>Co-curricular</button>
 
         <div className="sectionn">
