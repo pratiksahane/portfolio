@@ -4,6 +4,9 @@ import Navbar from './Navbar';
 import Home from './Home';
 import AboutMe from './AboutMe';
 import Qualification from './Qualification';
+import Certifications from './Certifications';
+import Achivements from './Achievements';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
     <Home />
     <AboutMe />
     <Qualification />
+    <Certifications />
+    <Achivements />
+    <Contact />
     </>
   );
 }

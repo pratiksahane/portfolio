@@ -17,7 +17,7 @@ code {
   top: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  height: 90px;
   background-color: cornsilk;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -36,7 +36,7 @@ code {
 
 .homepage {
   padding-top: 90px;
-  margin-top: 90px;
+  margin-top: 100px;
   height: auto; 
   padding: 60px 20px;
   background-image: url('./Wave.png');
@@ -50,6 +50,7 @@ code {
   font-family: 'Raleway', sans-serif;
   margin-left: 150px;
   font-size:xx-large;
+  font-weight: bold;
 }
 
 .homepage p{
@@ -59,8 +60,8 @@ code {
 }
 
 .homepage img {
-  width: 380px;
-  height: 380px;
+  width: 480px;
+  height: 480px;
   border-radius: 50%; 
   object-fit:fill; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -127,9 +128,126 @@ code {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-a:hover{
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover {
   color: palevioletred;
 }
+
+
+.certifications{
+  height: auto;
+  margin-top: 25px;
+  padding: 60px;
+  padding-top: 90px;
+  background-color: blanchedalmond;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.certifications button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 7cm;
+  height: 90px;
+  width: 900px;
+  background-color: antiquewhite;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  border: none; 
+  border-bottom: 4px solid #333;
+  border-radius: 0 0 12px 12px; 
+}
+
+.certifications h1{
+  font-size:x-large ;
+  font-weight: bold;
+  margin-left: 17cm;
+  color:rgba(22, 194, 191, 0.4);
+  margin-bottom: 30px;
+}
+
+.eduaction{
+  background-color: white;
+  margin-top: 20px;
+  height: auto;
+  max-width: auto;
+  font-family:'Raleway', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.achievements{
+  background-color: white;
+  margin-top: 2px;
+  height: auto;
+  max-width: auto;
+  font-family:'Raleway', sans-serif;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img1{
+  width: 280px;
+  height: 280px;
+  border-radius: 50%; 
+  object-fit:fill; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-left: 200px;
+  margin-top:20px;
+}
+
+.img2{
+  width: 280px;
+  height: 280px;
+  border-radius: 50%; 
+  object-fit:fill; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-left: 100px;
+  margin-top:20px;
+}
+
+.achievements h1{
+  margin-top: 20px;;
+  font-size:x-large ;
+  font-weight: bold;
+  margin-left: 17cm;
+  color:rgba(22, 194, 191, 0.4);
+}
+
+.achievements td{
+  padding: 20px,20px;
+  padding-left: 200px;
+  font-size: xx-large;
+  font-family:'Raleway', sans-serif;
+  color: rgb(109, 67, 12);
+}
+
+.about-me h3{
+  margin-top: 20px;;
+  font-size:x-large ;
+  font-weight: bold;
+  margin-left: 5px;
+  color:rgba(22, 194, 191, 0.4);
+}
+
+.about-me i {
+  margin: 20px;
+  margin-left: 2px;
+}
+
+
+
 
 
 
