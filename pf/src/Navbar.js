@@ -13,7 +13,8 @@ return(
             <th className='thnavbar'><i className="material-symbols-outlined">business_chip</i></th>
             <th className='thnavbar'><a href='#home'>Home</a></th> 
             <th className='thnavbar'><a href='#about'>About Me</a></th> 
-            <th className='thnavbar'><a href='#qualification'>Qualification</a></th>  
+            <th className='thnavbar'><a href='#qualification'>Qualification</a></th> 
+            <th className='thnavbar'><a href='#work'>Works</a></th>  
             <th className='thnavbar'><a href='#certificate'>Certifications</a></th>
             <th className='thnavbar'><a href='#achieve'>Achievements</a></th>  
             </tr>
