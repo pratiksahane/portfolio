@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './index.css';
 import Web from './web.png';
 import Software from './software.png';
@@ -6,8 +6,13 @@ import Blog from './blog.png';
 import Python from './python.png';
 import Java from './java.png';
 import CMS from './cms.png';
+import Sectionimp from "./Sectionimp";
 
 const Works=()=>{
+        const [section, setSection] = useState("");
+        const getSection=(sectionData)=>{
+                setSection(sectionData);
+        }
 
     return(<>
     <div className="works" id="work">
@@ -15,49 +20,65 @@ const Works=()=>{
         <table>
             <tr>
                <td>
-                <div className="container2">
+                <div onClick={()=>getSection("Web")} className="container2">
                         <img src={Web} alt="web"/>
-                        <b><a href="https://ghar2ghar.onrender.com/">Web Development</a></b><br/>
+                        <b>Web Development</b><br/>
                 </div>
                 </td>
                 <td>
-                <div className="container2">
+                <div onClick={()=>getSection("Software")} className="container2">
                         <img src={Software} alt="software"/>
-                        <b><a href="https://drive.google.com/file/d/1EZ4YVPKDEysBvmTAOKQYQiJ0X-SRlX0I/view?usp=drive_link">Software Development</a></b><br/>
+                        <b>Software Development</b><br/>
                 </div>
                 </td>
                 <td>
-                <div className="container2">
+                <div onClick={()=>getSection("Blog")} className="container2">
                         <img src={Blog} alt="blog"/>
-                        <b><a href="https://lead-generation-blog.vercel.app/">Blogs Writing</a></b><br/>
+                        <b>Blogs Writing</b><br/>
                 </div>
                 </td>
                 <td>
-                <div className="container2">
+                <div onClick={()=>getSection("Python")} className="container2">
                         <img src={Python} alt="python"/>
                         <b>Python <br/>Development</b><br/>
                 </div>
                 </td>
                 <td>
-                <div className="container2">
+                <div onClick={()=>getSection("Java")} className="container2">
                         <img src={Java} alt="java"/>
                         <b>Java Development</b><br/>
                 </div>
                 </td>
                 <td>
-                <div className="container2">
+                <div onClick={()=>getSection("Swing")} className="container2">
                         <img src={Java} alt="java"/>
                         <b>Java Swing Development</b><br/>
                 </div>
                 </td>
                 <td>
-                <div className="container2">
+                <div onClick={()=>getSection("CMS")} className="container2">
                         <img src={CMS} alt="java"/>
-                        <b><a href="https://pratiksahane351.wixsite.com/my-site-1">Content Management System</a></b><br/>
+                        <b>Content Management System</b><br/>
+                </div>
+                </td>
+                <td>
+                <div onClick={()=>getSection("Flutter")} className="container2">
+                        <img src={CMS} alt="java"/>
+                        <b>Flutter</b><br/>
                 </div>
                 </td>
             </tr>
-        </table>  
+        </table> 
+        <div>
+        {section==="Web" && <Sectionimp section="Web"/>}
+        {section==="Software" && <Sectionimp section="Software"/>}
+        {section==="Python" && <Sectionimp section="Python"/>}
+        {section==="Blog" && <Sectionimp section="Blog"/>}
+        {section==="Java" && <Sectionimp section="Java"/>}
+        {section==="Swing" && <Sectionimp section="Swing"/>}
+        {section==="CMS" && <Sectionimp section="CMS"/>}
+        {section==="Flutter" && <Sectionimp section="Flutter"/>}
+        </div> 
     </div>
     </>);
 }
