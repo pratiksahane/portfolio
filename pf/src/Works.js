@@ -26,6 +26,12 @@ const Works=()=>{
                 </div>
                 </td>
                 <td>
+                <div onClick={()=>getSection("FlutterApp Development")} className="container2">
+                        <img src={CMS} alt="java"/>
+                        <b>Flutter Apps</b><br/>
+                </div>
+                </td>
+                <td>
                 <div onClick={()=>getSection("Software")} className="container2">
                         <img src={Software} alt="software"/>
                         <b>Software Development</b><br/>
@@ -61,12 +67,6 @@ const Works=()=>{
                         <b>Content Management System</b><br/>
                 </div>
                 </td>
-                <td>
-                <div onClick={()=>getSection("Flutter")} className="container2">
-                        <img src={CMS} alt="java"/>
-                        <b>Flutter</b><br/>
-                </div>
-                </td>
             </tr>
         </table> 
         <div>
@@ -77,7 +77,7 @@ const Works=()=>{
         {section==="Java" && <Sectionimp section="Java"/>}
         {section==="Swing" && <Sectionimp section="Swing"/>}
         {section==="CMS" && <Sectionimp section="CMS"/>}
-        {section==="Flutter" && <Sectionimp section="Flutter"/>}
+        {section==="FlutterApp Development" && <Sectionimp section="FlutterApp Development"/>}
         </div> 
     </div>
     </>);
